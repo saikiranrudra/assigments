@@ -1,12 +1,24 @@
 ## Assignment 
-## Name: python assignment 1
+## Name: python assignment 2
 
 ### Questions
-1. Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed  in a comma-separated sequence on a single line. 
+1. Write a program which accepts a sequence of comma-separated numbers from console  and generate a list. 
 
-2. Write a Python program to accept the user's first and last name and then getting them printed in the the reverse order with a space between first name and last name. 
+2. Create the below pattern using nested for loop in Python. 
+```
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
 
-3. Write a Python program to find the volume of a sphere with diameter 12 cm.Formula: V=4/3 * π * r 3 
+```
+3. Write a Python program to reverse a word after accepting the input from the user. 
+
 
 ### Output
-![output_img](./static/assignment_1_output.png)
+![output_img](./static/assignment_2_output.png)

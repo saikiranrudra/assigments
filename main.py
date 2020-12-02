@@ -18,10 +18,18 @@ def horizontal_pyramid(height: int):
 
 
 if __name__ == "__main__":
+
+    #Write a program which accepts a sequence of comma-separated numbers from console  and generate a list
     #question 1
-    horizontal_pyramid(9)
+    numbers_string = input("Enter comma seperated numbers: ")
+    list_data = list(numbers_string.split(","))
+    print(list_data)
+    print(f"Data Type of above {type(list_data)}")
 
     #question 2
+    horizontal_pyramid(9)
+
+    #question 3
     #2.  Write a Python program to reverse a word after accepting the input from the user.
     input_string = input("Enter a string: ")
     print(input_string[::-1])
