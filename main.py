@@ -1,35 +1,43 @@
 """
 Name: Saikiran Rudra
 Email: saikiranrudra2@gmail.com
-Topic: python assignment 2
+Topic: python assignment 3
 """
-import math
 
-# 1. Create the below pattern using nested for loop in Python
-def horizontal_pyramid(height: int):
-    half = math.ceil(height/2)
-    for i in range(1, height + 1):
 
-        if i <= half:
-            print("*"*i)
-        else:
-            print("*"*(height - i + 1))
+# 1. Write a Python Program to implement your own myreduce() function which works exactly like Python's built-in function reduce()
+def myreduce(fun, lis: list):
+    return [fun(i) for i in lis]
 
+
+# 2. Write a Python program to implement your own myfilter() function which works exactly like Python's built-in function filter()
+def myfilter(fun, lis: list):
+    return [i for i in lis if fun(i)]
 
 
 if __name__ == "__main__":
+    # Question 1 ans
+    result = myreduce(lambda x: x ** 2, [1, 2, 3, 4, 5, 6, 7, 8])
+    print(result)
 
-    #Write a program which accepts a sequence of comma-separated numbers from console  and generate a list
-    #question 1
-    numbers_string = input("Enter comma seperated numbers: ")
-    list_data = list(numbers_string.split(","))
-    print(list_data)
-    print(f"Data Type of above {type(list_data)}")
+    # Question 2 ans
+    result = myfilter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+    print(result)
 
-    #question 2
-    horizontal_pyramid(9)
+    # Question 3.1 ans
+    print([i for i in "ACADGILD"])
 
-    #question 3
-    #2.  Write a Python program to reverse a word after accepting the input from the user.
-    input_string = input("Enter a string: ")
-    print(input_string[::-1])
+    # Question 3.2 ans
+    print([i * j for i in ['x', 'y', 'z'] for j in [1, 2, 3]])
+
+    # Question 3.3 ans
+    print([i * j for i in [1, 2, 3, 4] for j in ['x', 'y', 'z']])
+
+    # question 3.4 ans
+    l1 = [2, 3, 4, 5, 6]
+    l3 = [2, 3, 4, 5, 6, 7, 8]
+    lis = [[l1[j:j + 3][i]] for j in range(3) for i in range(3)] + [l3[j:j + 4] for j in range(4)]
+    print(lis)
+
+    # question 3.5
+    print([(j, i) for i in range(1, 4) for j in range(1, 4)])
