@@ -12,4 +12,5 @@ Hint: If a list [ ab,cde,erty] is passed on to the python function output should
 
 2.2 Write a Python function which takes a character (i.e. a string of length 1) and returns True if  it is a vowel, False otherwise.
 
+### Output
 ![output_img](./static/assignment-4-out.png)
